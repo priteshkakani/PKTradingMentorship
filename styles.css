@@ -381,13 +381,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
     border-left: 4px solid var(--gold);
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .disclaimer p {
     color: var(--gray-dark);
     font-size: 0.95rem;
+    line-height: 1.8;
 }
 
 /* ============================================
@@ -502,6 +503,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   What You'll Learn Section
+   ============================================ */
+
+.learn {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.learn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.learn-card {
+    background: var(--gray-light);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid var(--gold);
+}
+
+.learn-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--shadow-lg);
+}
+
+.learn-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.learn-card h3 {
+    color: var(--royal-blue-dark);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.learn-card p {
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.learn-card p strong {
+    color: var(--royal-blue);
+    font-weight: 600;
+}
+
+/* ============================================
    Program Section
    ============================================ */
 
@@ -524,6 +575,36 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.program-info-box {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--royal-blue-dark);
+    font-weight: 600;
+}
+
+.referral-bonus {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    text-align: center;
+    border: 2px dashed var(--gold);
+}
+
+.referral-bonus h4 {
+    color: var(--royal-blue-dark);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.referral-bonus p {
+    color: var(--gray-dark);
+    margin: 0;
 }
 
 .program-header {
@@ -615,6 +696,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     color: var(--gray);
     font-style: italic;
+}
+
+.payment-terms {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--gray-dark);
+    font-size: 0.95rem;
 }
 
 /* ============================================
@@ -792,6 +881,23 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--gold-dark) !important;
 }
 
+.twitter-link {
+    color: var(--royal-blue) !important;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.twitter-link:hover {
+    color: var(--royal-blue-dark) !important;
+}
+
+.contact-note {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
 /* ============================================
    Footer
    ============================================ */
@@ -915,6 +1021,10 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         max-width: 200px;
         margin: 0 auto;
+    }
+    
+    .learn-grid {
+        grid-template-columns: 1fr;
     }
     
     .contact-content {
