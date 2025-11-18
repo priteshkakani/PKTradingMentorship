@@ -54,7 +54,7 @@ PKTradingMentorship/
 ## Customization
 
 ### Update Contact Information
-- **WhatsApp**: Update the phone number in WhatsApp links (currently placeholder: 919876543210)
+- **WhatsApp**: All site links now point to +91 86183 02179 (`https://wa.me/918618302179`)
 - **Email**: Already set to `priteshkakani@outlook.com`
 - **UPI ID**: Already set to `priteshkakani@icici`
 

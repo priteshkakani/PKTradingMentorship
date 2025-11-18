@@ -129,7 +129,7 @@ if (contactForm) {
         );
         
         // You can uncomment this to open WhatsApp directly
-        // window.open(`https://wa.me/919876543210?text=${whatsappMessage}`, '_blank');
+        // window.open(`https://wa.me/918618302179?text=${whatsappMessage}`, '_blank');
         
         // Reset form
         contactForm.reset();
