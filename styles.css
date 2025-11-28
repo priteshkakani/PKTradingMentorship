@@ -251,6 +251,436 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   Transform Question Section
+   ============================================ */
+
+.transform-question {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--royal-blue-dark) 0%, var(--royal-blue) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.transform-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.transform-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.transform-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--gold-light);
+    line-height: 1.3;
+}
+
+.divider-line {
+    width: 100px;
+    height: 3px;
+    background: var(--gold);
+    margin: 2rem auto;
+    border-radius: 2px;
+}
+
+.transform-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.transform-text.highlight-text {
+    color: var(--gold-light);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.transform-text.strong-text {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-top: 1.5rem;
+}
+
+/* ============================================
+   What You'll Achieve Section
+   ============================================ */
+
+.achieve {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.achieve-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achieve-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--gray-light);
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achieve-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px var(--shadow);
+}
+
+.achieve-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.achieve-item p {
+    color: var(--gray-dark);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.achieve-note {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    padding: 2.5rem;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 3rem auto 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+}
+
+.note-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achieve-note p {
+    color: var(--royal-blue-dark);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.note-support {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+/* ============================================
+   Why This Program Changes Lives Section
+   ============================================ */
+
+.why-program {
+    padding: 80px 0;
+    background: var(--gray-light);
+}
+
+.why-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.why-subtitle {
+    font-size: 1.8rem;
+    color: var(--royal-blue-dark);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.why-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px var(--shadow-lg);
+}
+
+.why-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.why-item p {
+    color: var(--gray-dark);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+.why-timeline {
+    background: linear-gradient(135deg, var(--royal-blue), var(--royal-blue-dark));
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--white);
+    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.3);
+}
+
+.timeline-item {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item strong {
+    color: var(--gold-light);
+    font-size: 1.3rem;
+}
+
+/* ============================================
+   Real Cost Section
+   ============================================ */
+
+.real-cost {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.cost-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cost-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--gray-light);
+    border-radius: 12px;
+    border-left: 4px solid #ef4444;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cost-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px var(--shadow);
+}
+
+.cost-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.cost-item p {
+    color: var(--gray-dark);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+.cost-message {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+}
+
+.cost-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.cost-text.strong-text {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+/* ============================================
+   Results Section
+   ============================================ */
+
+.results {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--gray-light) 0%, var(--white) 100%);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.results-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+    box-shadow: 0 3px 10px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.results-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-lg);
+}
+
+.results-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.results-item p {
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* ============================================
+   Call to Action Final Section
+   ============================================ */
+
+.cta-final {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--royal-blue-dark) 0%, var(--royal-blue) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--gold-light);
+    line-height: 1.3;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.cta-text strong {
+    color: var(--gold-light);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.cta-signature {
+    margin: 3rem 0 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.signature-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--gold-light);
+}
+
+.signature-credentials {
+    font-size: 1rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+
+.cta-buttons .btn {
+    min-width: 250px;
+}
+
+.program-description-box {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid var(--gold-light);
+}
+
+.program-description-box p {
+    color: var(--royal-blue-dark);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.program-includes {
+    font-size: 0.95rem !important;
+    color: var(--gray) !important;
+    font-weight: 500 !important;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* ============================================
    About Section
    ============================================ */
 
@@ -1100,6 +1530,47 @@ h1, h2, h3, h4, h5, h6 {
     .social-links {
         justify-content: center;
     }
+    
+    .transform-title {
+        font-size: 1.75rem;
+    }
+    
+    .transform-text {
+        font-size: 1.1rem;
+    }
+    
+    .transform-text.highlight-text,
+    .transform-text.strong-text {
+        font-size: 1.2rem;
+    }
+    
+    .achieve-grid,
+    .why-grid,
+    .cost-grid,
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .why-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .cta-title {
+        font-size: 1.75rem;
+    }
+    
+    .cta-text {
+        font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        min-width: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1126,6 +1597,54 @@ h1, h2, h3, h4, h5, h6 {
     
     .contact-form {
         padding: 1.5rem;
+    }
+    
+    .transform-title {
+        font-size: 1.5rem;
+    }
+    
+    .transform-icon {
+        font-size: 3rem;
+    }
+    
+    .transform-text {
+        font-size: 1rem;
+    }
+    
+    .achieve-note {
+        padding: 1.5rem;
+    }
+    
+    .achieve-note p {
+        font-size: 1rem;
+    }
+    
+    .why-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .timeline-item {
+        font-size: 1.1rem;
+    }
+    
+    .cost-text {
+        font-size: 1.1rem;
+    }
+    
+    .cost-text.strong-text {
+        font-size: 1.2rem;
+    }
+    
+    .cta-title {
+        font-size: 1.5rem;
+    }
+    
+    .cta-text {
+        font-size: 1rem;
+    }
+    
+    .signature-name {
+        font-size: 1.3rem;
     }
 }
 
